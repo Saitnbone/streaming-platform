@@ -48,7 +48,7 @@ export function ms(str: StringValue): number {
 	}
 
 	const match =
-		/^(?<value>-?(?:\d+)?\.?\d+) *(?<type>Years|Year|Yrs|Yr|Y|Weeks|Week|Wks|W|Days|Day|D|Hours|Hour|H|Minutes|Minute|M|Seconds|Second|S|Ms|Millisecond|Milliseconds|Msecs|Msec)$/i.exec(
+		/^(?<value>-?(?:\d+)?\.?\d+) *(?<type>Years|Year|Yrs|Yr|Y|Weeks|Week|Wks|W|Days|Day|D|Hours|Hour|H|Minutes|Minute|M|Seconds|Second|S|Ms|Millisecond|Milliseconds|Msecs|Msec)?$/i.exec(
 			str
 		)
 	if (!match) {
