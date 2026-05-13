@@ -1,9 +1,15 @@
 {
+	"extends": ["@typescript-eslint/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
 	"settings": {
 		"import/resolver": {
 			"typescript": {
 				"alwaysTryTypes": true
 			}
 		}
+	},
+	"rules": {
+		"@typescript-eslint/no-unsafe-call": "warn"
 	}
 }
