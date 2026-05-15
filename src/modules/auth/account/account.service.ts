@@ -9,6 +9,16 @@ import { CreateUserInput } from './inputs/create-user.input'
 export class AccountService {
 	public constructor(private readonly prismaService: PrismaService) {}
 
+	public async getMe(id: string) {
+		const user = await this.prismaService.user.findUnique({
+			where: {
+				id
+			}
+		})
+
+		return user
+	}
+
 	public async createUser(input: CreateUserInput) {
 		const { email, password, username } = input
 
