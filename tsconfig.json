@@ -2,6 +2,7 @@
 	"compilerOptions": {
 		"esModuleInterop": true,
 		"isolatedModules": true,
+		"resolveJsonModule": true,
 		"declaration": true,
 		"removeComments": true,
 		"emitDecoratorMetadata": true,
